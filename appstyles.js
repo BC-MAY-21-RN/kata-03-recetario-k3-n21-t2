@@ -12,7 +12,6 @@ export const styles = StyleSheet.create({
         marginVertical: 25,
     },
     search: {
-        marginTop: 10,
         backgroundColor: '#343435',
         borderRadius: 20,
         flexDirection: 'row',
