@@ -34,29 +34,29 @@ const App = () => {
 
           <View style={styles.foodimg}>
             <View>
-              <Image source={require('./src/images/maruchan.png')} style={styles.imgsTrending}/>
-              <Text style={styles.textStyle}>Maruchan</Text>
-            </View>
-          </View>
-
-          <View style={styles.foodimg}>
-            <View>
-              <Image source={require('./src/images/cangreburger.png')} style={styles.imgsTrending}/>
-              <Text style={styles.textStyle}>Cangreburger</Text>
-            </View>
-          </View>
-
-          <View style={styles.foodimg}>
-            <View>
               <Image source={require('./src/images/pizza.png')} style={styles.imgsTrending}/>
-              <Text style={styles.textStyle}>Pizza de don {'\n'}cangrejo</Text>
+              <Text style={styles.textStyle}>Pizza</Text>
             </View>
           </View>
 
           <View style={styles.foodimg}>
             <View>
-              <Image source={require('./src/images/omni.png')} style={styles.imgsTrending}/>
-              <Text style={styles.textStyle}>Nalgas</Text>
+              <Image source={require('./src/images/ramen.png')} style={styles.imgsTrending}/>
+              <Text style={styles.textStyle}>Ramen</Text>
+            </View>
+          </View>
+
+          <View style={styles.foodimg}>
+            <View>
+              <Image source={require('./src/images/sandwich.png')} style={styles.imgsTrending}/>
+              <Text style={styles.textStyle}>Sandwich</Text>
+            </View>
+          </View>
+
+          <View style={styles.foodimg}>
+            <View>
+              <Image source={require('./src/images/huevo.png')} style={styles.imgsTrending}/>
+              <Text style={styles.textStyle}>Huevo con{'\n'}jamón</Text>
             </View>
           </View>
 
@@ -78,27 +78,3 @@ const App = () => {
 
 export default App;
 
-
-/*
-        <Image
-          source={require('./src/images/cangreburger.png')}
-          style={{ width: 200, height: 200 }}
-        />
-        <Image
-          source={require('./src/images/taco.png')}
-          style={{ height: 200, width: 200 }}
-        />
-        <Image
-          source={require('./src/images/omni.png')}
-        />
-        <Image
-          source={require('./src/images/maruchan.png')}
-          style={{ height: 200, width: 200 }}
-        />
-      </ScrollView>
-      <Text style={{ fontSize: 30 }}>Recent</Text>
-      <ScrollView horizontal>
-        <Image source={require('./src/images/cangreburger.png')} />
-        <Image source={require('./src/images/taco.png')} />
-        <Image source={require('./src/images/maruchan.png')} />
-        */
