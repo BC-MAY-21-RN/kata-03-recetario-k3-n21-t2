@@ -1,11 +1,8 @@
-import React from 'react'
-import { View, Text } from 'react-native'
-import { Container } from './styled'
+import styled from "styled-components";
+import { Box } from "../styled/generals";
 
-export const Trending = () => {
-    return (
-        <Container>
-            <Text>trending</Text>
-        </Container>
-    )
-}
+export const Container = styled(Box)`
+    background-color: 'red';
+    height: 60px;
+    color: white;
+`
