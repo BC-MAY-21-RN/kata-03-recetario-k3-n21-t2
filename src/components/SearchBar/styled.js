@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Box } from "../styled/generals";
 
+
 export const Contaier = styled(Box)`
     background-color: '#343435';
     height: 50px;
@@ -14,4 +15,10 @@ export const TextCustom = styled.TextInput`
   color: white;
   font-size: 18px;
 `;
+
+export const CustomImage = styled.Image`
+  width: 30px;
+  height: 30px;
+  align-Self: 'center';
+`
 
