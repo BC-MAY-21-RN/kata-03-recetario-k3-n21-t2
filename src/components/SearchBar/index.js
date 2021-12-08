@@ -2,7 +2,7 @@ import React from 'react'
 import { View, Image, StyleSheet, useState } from 'react-native'
 import styled from 'styled-components'
 import { Contaier, CustomImage, TextCustom } from './styled'
-import { Ramen } from '../../library/images'
+import { Ramen, Search } from '../../library/images'
 
 
 
@@ -11,7 +11,7 @@ export const SearchBar = () => {
         <Contaier>
             <View style={styles.Bar}>
                 <TextCustom>What do you want to eat?</TextCustom>
-                <Image source={Ramen} />
+                <Image source={Search} />
             </View>
         </Contaier>
     )

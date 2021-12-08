@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Box } from "../styled/generals";
+import { Box } from "../Styled/generals";
 
 
 export const Contaier = styled(Box)`
