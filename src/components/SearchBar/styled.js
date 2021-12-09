@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Box } from "../Styled/generals";
-
+import { StyleSheet } from "react-native";
 
 export const Contaier = styled(Box)`
     background-color: '#343435';
@@ -21,4 +21,6 @@ export const CustomImage = styled.Image`
   height: 30px;
   align-Self: 'center';
 `
+
+
 

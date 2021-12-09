@@ -2,7 +2,7 @@ import React from 'react'
 import { View, Image, StyleSheet, useState } from 'react-native'
 import styled from 'styled-components'
 import { Contaier, CustomImage, TextCustom } from './styled'
-import { Ramen, Search } from '../../library/images'
+import { Ramen, Search, Micro } from '../../library/images'
 
 
 
@@ -10,12 +10,14 @@ export const SearchBar = () => {
     return (
         <Contaier>
             <View style={styles.Bar}>
+                <Image source={Search} style={(styles.searchImg)}/>
                 <TextCustom>What do you want to eat?</TextCustom>
-                <Image source={Search} />
+                <Image source={Micro} style={(styles.microimg)}/>
             </View>
         </Contaier>
     )
 }
+
 
 const styles = StyleSheet.create({
     Bar: {
@@ -35,7 +37,7 @@ const styles = StyleSheet.create({
         width: 30,
         height: 30,
         alignSelf: 'center',
-        left: 60,
+        left: 80,
     },
-
-})
+  
+  })
