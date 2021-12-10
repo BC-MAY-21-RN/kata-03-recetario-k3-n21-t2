@@ -1,4 +1,4 @@
-import Burger from "./burguer.png"
+import Burguer from "./burguer.png"
 import Huevo  from "./huevo.png"
 import Micro from "./micro.png"
 import Pizza from "./pizza.png"
@@ -7,7 +7,7 @@ import Sandwich from "./sandwich.png"
 import Search from "./search.png"
 
 export {
-    Burger,
+    Burguer,
     Ramen,
     Huevo,
     Micro,

@@ -1,4 +1,7 @@
-[
+import { Burguer, Huevo, Pizza, Ramen, Sandwich  } from '../images'
+
+
+ export const trendingList = [
   {
     "id": 1,
     "name": "Hamburgesa",
@@ -54,7 +57,7 @@
       }
      
     ],
-    "image": "../../library/images/burger.png",
+    "image": Burguer,
     "tag": "TRENDING"
   },
   {
@@ -106,7 +109,7 @@
         "unit ":"rebandas"
       }
     ],
-    "image": "../../library/images/pizza.png",
+    "image": Pizza,
     "tag": "TRENDING"
   },
   {
@@ -153,12 +156,12 @@
         "unit":"pieces"
       }
     ],
-    "image": "../../library/images/ramen.png",
+    "image": Ramen,
     "tag": "TRENDING"
   },
   {
     "id": 4,
-    "name": "Sandwich especial",
+    "name": "Sandwich",
     "nameImg" : "sandwich",
     "description": "Sandwich de jamon con queso",
     "favorite": true,
@@ -190,12 +193,12 @@
         "unit":"g"
       }
     ],
-    "image": "../images/sandwich.png",
+    "image": Sandwich,
     "tag": "TRENDING"
   },
   {
     "id": 5,
-    "name": "huevo",
+    "name": "Huevo con jamon",
     "nameImg" : "huevo",
     "description": "Huevito con jamon",
     "favorite": true,
@@ -222,7 +225,10 @@
         "unit":"g"
       }
     ],
-    "image": "../images/huevo.png",
+    "image": Huevo,
     "tag": "TRENDING"
   }
 ]
+  
+
+

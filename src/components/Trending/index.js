@@ -1,28 +1,28 @@
-import React, {useState, useEffect} from 'react'
-import { View, Text, Image, ScrollView, Button, TouchableOpacity } from 'react-native'
-import { Container, TextPink, CustomImage, TextWhite, TextCustom, ListContainer } from './styled'
-import { Huevo, Pizza, Ramen, Sandwich, Burguer } from '../../library/images'
-import {Item} from '../Item/index'
-import trendingList from '../../library/constants/trendingList.json'
+import React from 'react'
+import { ScrollView, TouchableOpacity } from 'react-native'
+import { Container, TextPink, CustomImage, TextWhite, TextCustom, ItemContainer } from './styled'
+
 
 export const Trending = ({list}) => {
-    const listToDisplay = list.map((item)=>
-        <ListContainer>
-            <CustomImage source={Burguer}/>
-            <TextCustom>{item.name}</TextCustom>
-        </ListContainer>
-    )
+
+    const listToDisplay = list.map((item)=> {
+        console.log(item.image);
+        return(
+            <ItemContainer>
+                <CustomImage source={item.image}/>
+                <TextCustom>{item.name}</TextCustom>
+            </ItemContainer>
+        )
+    })
 
     return (
         <Container>
             <TextPink>Trending</TextPink>
-                <Container>
+            <TouchableOpacity>
                     <ScrollView horizontal={true}>
-                        <TouchableOpacity>
-                            {listToDisplay}
-                        </TouchableOpacity>
+                        {listToDisplay}
                     </ScrollView>
-                </Container>
+            </TouchableOpacity>
         </Container>
         
     )
