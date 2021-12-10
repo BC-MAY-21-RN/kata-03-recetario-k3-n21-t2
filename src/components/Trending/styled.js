@@ -10,6 +10,8 @@ export const Container = styled.View`
   flex-direction: column;
   height: 250px
   margin-bottom: 10px;
+  margin-top: 10px;
+  padding-left: 10px;
 `
 
 export const TextCustom = styled.TextInput`
@@ -24,6 +26,7 @@ export const CustomImage = styled.Image`
   border-radius: 5px;  
   height: 150px;
   margin-bottom: 5px;
+  margin-top: 5px;
   width: 150px;
 `
 export const ItemContainer = styled.View`
