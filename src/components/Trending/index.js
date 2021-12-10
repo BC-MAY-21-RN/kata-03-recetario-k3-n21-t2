@@ -1,38 +1,30 @@
 import React, {useState, useEffect} from 'react'
 import { View, Text, Image, ScrollView, Button, TouchableOpacity } from 'react-native'
-import { Container, TextPink, CustomImage, TextWhite } from './styled'
+import { Container, TextPink, CustomImage, TextWhite, TextCustom, ListContainer } from './styled'
 import { Huevo, Pizza, Ramen, Sandwich, Burguer } from '../../library/images'
 import {Item} from '../Item/index'
-import recipes from '../../library/constants/recipes.json'
+import trendingList from '../../library/constants/trendingList.json'
 
-export const Trending = () => {
-    
-    const [receta, setReceta] = useState(recipes)
+export const Trending = ({list}) => {
+    const listToDisplay = list.map((item)=>
+        <ListContainer>
+            <CustomImage source={Burguer}/>
+            <TextCustom>{item.name}</TextCustom>
+        </ListContainer>
+    )
 
-    const trendingSection = (recipes) => {
-        receta.map((recipes, item) => {
-            return(
-            <Item>
-                
-            </Item> 
-            )
-        })
-    }
-
-    useEffect(() => {
-        
-    })
-    
     return (
         <Container>
             <TextPink>Trending</TextPink>
-            <Container>
-                <ScrollView>
-
-
-                </ScrollView>
-            </Container>
+                <Container>
+                    <ScrollView horizontal={true}>
+                        <TouchableOpacity>
+                            {listToDisplay}
+                        </TouchableOpacity>
+                    </ScrollView>
+                </Container>
         </Container>
+        
     )
 }
 

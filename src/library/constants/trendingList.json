@@ -2,6 +2,7 @@
   {
     "id": 1,
     "name": "Hamburgesa",
+    "nameImg" : "burguer",
     "description": "Hamburgesa del Valhalla",
     "favorite": true,
     "recent": 1,
@@ -53,13 +54,14 @@
       }
      
     ],
-    "image": "../images/burguer.png",
+    "image": "../../library/images/burger.png",
     "tag": "TRENDING"
   },
   {
     "id": 2,
     "name": "Pizza",
-    "description": "Pizza estilo Nápoles",
+    "nameImg" : "pizza",
+    "description": "Pizza estilo Napoles",
     "favorite": true,
     "recent": 1,
     "ingredients" : [ 
@@ -86,7 +88,7 @@
       {
         "name" : "aceite de oliva",
         "quantity": 1,
-        "Unit": "spoon"
+        "Unit": "cucharaditas"
       },
       {
         "name" : "tomate triturado",
@@ -101,78 +103,90 @@
       {
         "name" : "Hojas de albahaca fresca",
         "quantity": 15,
-        "unit ":"slices"
+        "unit ":"rebandas"
       }
     ],
-    "image": "../images/pizza.png",
+    "image": "../../library/images/pizza.png",
     "tag": "TRENDING"
   },
   {
     "id": 3,
-    "name": "Hamburgesa",
-    "description": "Hamburgesa del Valhalla",
+    "name": "Ramen",
+    "nameImg" : "ramen",
+    "description": "Sopa hecha con caldo de carne ",
     "favorite": true,
     "recent": 1,
     "ingredients" : [ 
       {
-      "name" : "Pan de hamburgesa",
-      "quantity": 30,
-      "Unit": "g"
+      "name" : "Huevos",
+      "quantity": 2,
+      "Unit": "piezas"
       },
       {
-        "name" : "carne",
-        "quantity": 100,
+        "name" : "Fideos ramen",
+        "quantity": 200,
         "unit": "g"
       },
       {
-        "name" : "Mozzarella en barra",
+        "name" : "carne de cerdo",
+        "quantity": 50,
+        "unit":"g"
+      },
+      {
+        "name" : "verduras",
         "quantity": 100,
         "unit":"g"
       },
       {
-        "name" : "mozzarella fresca de búfala",
-        "quantity": 150,
-        "unit":"g"
+        "name" : "Aceite de oliva",
+        "quantity": 1,
+        "unit":"cucharadita"
       },
       {
-        "name" : "harina de fuerza",
-        "quantity": 500,
-        "unit":"g"
+        "name" : "Salsa de soya",
+        "quantity": 2,
+        "unit":"cucharadita"
+      },
+      {
+        "name" : "Dientes de ajo",
+        "quantity": 2,
+        "unit":"pieces"
       }
     ],
-    "image": "../images/ramen.png",
+    "image": "../../library/images/ramen.png",
     "tag": "TRENDING"
   },
   {
     "id": 4,
-    "name": "Hamburgesa",
-    "description": "Hamburgesa del Valhalla",
+    "name": "Sandwich especial",
+    "nameImg" : "sandwich",
+    "description": "Sandwich de jamon con queso",
     "favorite": true,
     "recent": 1,
     "ingredients" : [ 
       {
-      "name" : "Pan de hamburgesa",
-      "quantity": 30,
-      "Unit": "g"
+      "name" : "Pan de sandwich",
+      "quantity": 2,
+      "Unit": "piezas"
       },
       {
-        "name" : "carne",
-        "quantity": 100,
+        "name" : "Jamon de pavo",
+        "quantity": 50,
         "unit": "g"
       },
       {
-        "name" : "Mozzarella en barra",
-        "quantity": 100,
+        "name" : "Queso manchego",
+        "quantity": 30,
         "unit": "g"
       },
       {
-        "name" : "mozzarella fresca de búfala",
-        "quantity": 150,
+        "name" : "Tocino",
+        "quantity": 30,
         "unit":"g"
       },
       {
-        "name" : "harina de fuerza",
-        "quantity": 500,
+        "name" : "aderezo especial",
+        "quantity": 20,
         "unit":"g"
       }
     ],
@@ -182,6 +196,7 @@
   {
     "id": 5,
     "name": "huevo",
+    "nameImg" : "huevo",
     "description": "Huevito con jamon",
     "favorite": true,
     "recent": 1,
@@ -198,7 +213,12 @@
       },
       {
         "name" : "pimienta",
-        "quantity": 10,
+        "quantity": 0.1,
+        "unit":"g"
+      },
+      {
+        "name" : "sal",
+        "quantity": 0.1,
         "unit":"g"
       }
     ],

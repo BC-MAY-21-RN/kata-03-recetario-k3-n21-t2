@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import { Box } from '../Styled/generals'
+
+export const C
 
 export const Container = styled(Box)`
 background-color: 'blue';

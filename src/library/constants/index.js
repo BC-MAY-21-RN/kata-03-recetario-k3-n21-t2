@@ -1,1 +1,1 @@
-export { recipes } from "./recipes"
+export { trendingList } from "./trendingList"
