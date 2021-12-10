@@ -17,6 +17,13 @@ export const TextCustom = styled.TextInput`
   left: 1px;
 `;
 
+export const TextFood = styled.Text`
+  color: white;
+  font-size: 18px;
+  width: 215px;
+  left: 1px;
+`
+
 export const CustomImage = styled.Image`
     height: 150px;
     margin-bottom: 5px;

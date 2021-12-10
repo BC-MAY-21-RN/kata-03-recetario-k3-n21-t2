@@ -3,13 +3,11 @@ import { Box } from "../Styled/generals";
 import { StyleSheet } from "react-native";
 
 export const Container = styled(Box)`
-  background-color: '#343435';
+  background-color: #282828;
   height: 50px;
-  color: "white";
   border-radius: 15px;
   padding: 5px;
   align-items: center;
-  margin-top:50px
 `
 
 export const TextCustom = styled.TextInput`
@@ -26,7 +24,7 @@ export const CustomImage = styled.Image`
 `
 
 export const Bar = styled.View`
-  background-color: '#343435';
+  background-color: #343435;
   border-radius: 20px;
   flex-direction: row;
   width: 95%;
@@ -42,7 +40,7 @@ export const SearchImg = styled.Image`
 
 export const MicroImg = styled.Image`
   align-self: flex-end;
+  left: 250%;
   height: 30px;
-  left: 80px;
   width: 30px;
 ` 
