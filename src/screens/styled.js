@@ -46,15 +46,16 @@ export const CustomImage = styled.Image`
 `
 export const ImageFav = styled.Image`
   position: absolute;
-  right: 10px;
-  top: 15px
+  right: 1px;
+  top: 15px;
+  
   `
   
-export const ImageShare = styled(ImageFav)`
+  export const ImageShare = styled(ImageFav)`
   left: 350px;
 `
   
 export const ImageClose = styled(ImageFav)`
   left: 10px;
-`
 
+`

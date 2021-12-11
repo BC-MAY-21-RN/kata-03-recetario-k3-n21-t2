@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ScrollView, TouchableOpacity } from 'react-native'
+import { ScrollView, TouchableOpacity, Image, View, Text, StyleSheet } from 'react-native'
 import splitLayoutProps from 'react-native/Libraries/StyleSheet/splitLayoutProps';
 import {Layout} from '../components';
 import {TextWhite, Row, CustomImage, FoodText, TrendingText, ImageFav, ImageShare, ImageClose} from './styled'
@@ -7,8 +7,21 @@ import {Fav, Fav2 , Share, Close} from '../library/images'
 
 export const Details = (props) => {
     const  {route: {params: list}} = props 
-    const { name, description, image, ingredients } = list
+    const { name, description, image, ingredients, favorite } = list
     const [fav, setFav] = useState(Fav)
+    const [Favorite, setFavorite] = useState(favorite)
+
+    const ChangeImagen = () => {
+        if(Favorite){
+            setFav(require('../library/images/fav2.png'))
+            setFavorite(false)
+        }
+        else{
+            setFav(require('../library/images/fav.png'))
+            setFavorite(true)
+        }
+    }
+
     const renderIngredients = ingredients.map((ingredients, index)=>{
             return(
                 <Row key={`ingredient-${index}`} >
@@ -20,9 +33,13 @@ export const Details = (props) => {
         return (
             <Layout>  
                 <ScrollView>
-                    <TouchableOpacity>
-                        <ImageFav source={ Fav }/>
+                    <TouchableOpacity style={styles.boton} onPress={
+                        ChangeImagen
+                    }>
+                        <ImageFav source={fav}/>
                     </TouchableOpacity>
+                    
+                    
                     <ImageShare source={ Share }/>
                     <ImageClose source={Close}/>
                     
@@ -42,4 +59,11 @@ export const Details = (props) => {
         )
 }
 
+const styles = StyleSheet.create({
+    boton: {
+        position: 'absolute',
+        zIndex: 1,
+        right: 10
+    }
+})
 
