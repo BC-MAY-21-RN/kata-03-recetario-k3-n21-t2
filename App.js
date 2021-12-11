@@ -1,13 +1,21 @@
 import React from 'react';
-import { Home } from './src/screens';
+import { Details, Home } from './src/screens';
+import { NavigationContainer } from '@react-navigation/native';
+import Navigator from './src/navigation/index.js' 
 
 const App = () => {
   return (
     <>
-      <Home />
+      <NavigationContainer>
+        <Navigator />
+      </NavigationContainer>
     </>
   );
 };
 
 export default App;
+
+
+
+    
 

@@ -14,10 +14,10 @@ export const Container = styled.View`
   padding-left: 10px;
 `
 
-export const TextCustom = styled.TextInput`
+export const TextCustom = styled.Text`
   color: white;
   font-size: 18px;
-  height: 50px
+  height: 50px;
   left: 1px;
   text-align: center;
 `
@@ -35,4 +35,6 @@ export const ItemContainer = styled.View`
   margin: 10px;
 `
 
-
+export const ButtomTouchable = styled.TouchableOpacity`
+  flex-direction: row;
+`

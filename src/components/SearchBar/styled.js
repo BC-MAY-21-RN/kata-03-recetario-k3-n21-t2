@@ -8,7 +8,7 @@ export const Container = styled(Box)`
   border-radius: 15px;
   padding: 5px;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 10px;
 `
 
 export const TextCustom = styled.TextInput`

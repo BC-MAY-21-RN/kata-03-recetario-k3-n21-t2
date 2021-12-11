@@ -1,30 +1,34 @@
 import React from 'react'
-import { ScrollView, TouchableOpacity } from 'react-native'
-import { Container, TextPink, CustomImage, TextWhite, TextCustom, ItemContainer } from './styled'
+import { ScrollView } from 'react-native'
+import { Container, TextPink, CustomImage, TextCustom, ItemContainer, ButtomTouchable } from './styled'
 
 
-export const Trending = ({list}) => {
+export const Trending = ({props, list}) => {
 
-    const listToDisplay = list.map((item)=> {
-        console.log(item.image);
+    const { navigation } = props
+
+    const listToDisplayTrending = list.map((item)=> {
         return(
-            <ItemContainer>
-                <CustomImage source={item.image}/>
-                <TextCustom>{item.name}</TextCustom>
-            </ItemContainer>
+            <ButtomTouchable key={`receta-${item.id}`}
+            onPress={() => {
+                 navigation.navigate('Details', item)
+                }
+            }>
+                <ItemContainer>
+                    <CustomImage source={item.image}/>
+                    <TextCustom>{item.name}</TextCustom>
+                </ItemContainer>
+            </ButtomTouchable>
         )
     })
 
     return (
         <Container>
             <TextPink>Trending</TextPink>
-            <TouchableOpacity>
                     <ScrollView horizontal={true}>
-                        {listToDisplay}
+                            {listToDisplayTrending}
                     </ScrollView>
-            </TouchableOpacity>
         </Container>
         
     )
 }
-

@@ -5,6 +5,10 @@ import Pizza from "./pizza.png"
 import Ramen  from "./ramen.png"
 import Sandwich from "./sandwich.png"
 import Search from "./search.png"
+import Fav from "./fav.png"
+import Fav2 from "./fav2.png"
+import Close from "./close.png"
+import Share from "./share.png"
 
 export {
     Burguer,
@@ -13,5 +17,9 @@ export {
     Micro,
     Pizza,
     Sandwich,
-    Search
+    Search,
+    Fav,
+    Fav2,
+    Close,
+    Share
 }

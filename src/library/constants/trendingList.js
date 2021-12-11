@@ -4,9 +4,9 @@ import { Burguer, Huevo, Pizza, Ramen, Sandwich  } from '../images'
  export const trendingList = [
   {
     "id": 1,
-    "name": "Hamburgesa",
+    "name": "Hamburguesa",
     "nameImg" : "burguer",
-    "description": "Hamburgesa del Valhalla",
+    "description": "Hamburguesa del Valhalla",
     "favorite": true,
     "recent": 1,
     "ingredients" : [ 
@@ -16,42 +16,42 @@ import { Burguer, Huevo, Pizza, Ramen, Sandwich  } from '../images'
       "Unit": "g"
       },
       {
-        "name" : "carne",
+        "name" : "Carne",
         "quantity": 220,
         "unit": "g"
       },
       {
-        "name" : "lechuga",
+        "name" : "Lechuga",
         "quantity": 2,
         "unit":"slices"
       },
       {
-        "name" : "jitomate",
+        "name" : "Jitomate",
         "quantity": 1,
         "unit":"slice"
       },
       {
-        "name" : "cebolla",
+        "name" : "Cebolla",
         "quantity": 2,
         "unit ": "slice"
       },
       {
-        "name" : "pepinillos",
+        "name" : "Pepinillos",
         "quantity": 4,
         "unit": "slice"
       },
       {
-        "name" : "aderezo especial",
+        "name" : "Aderezo especial",
         "quantity": 30,
         "unit": "g"
       },
       {
-        "name" : "mezcla de quesos",
+        "name" : "Mezcla de quesos",
         "quantity": 30,
         "unit": "g"
       },
       {
-        "name" : "tocino",
+        "name" : "Tocino",
         "quantity": 30,
         "unit": "g"
       }
@@ -69,32 +69,32 @@ import { Burguer, Huevo, Pizza, Ramen, Sandwich  } from '../images'
     "recent": 1,
     "ingredients" : [ 
       {
-      "name" : "harina",
+      "name" : "Harina",
       "quantity": 450,
       "Unit": "g"
       },
       {
-        "name" : "levadura prensada",
+        "name" : "Levadura prensada",
         "quantity": 2.5,
         "Unit": "g"
       },
       {
-        "name" : "agua",
+        "name" : "Agua",
         "quantity": 250,
         "Unit": "ml"
       }, 
       {
-        "name" : "sal",
+        "name" : "Sal",
         "quantity": 12,
         "Unit": "ml"
       },
       {
-        "name" : "aceite de oliva",
+        "name" : "Aceite de oliva",
         "quantity": 1,
         "Unit": "cucharaditas"
       },
       {
-        "name" : "tomate triturado",
+        "name" : "Tomate triturado",
         "quantity": 400,
         "unit": "g"
       },
@@ -131,12 +131,12 @@ import { Burguer, Huevo, Pizza, Ramen, Sandwich  } from '../images'
         "unit": "g"
       },
       {
-        "name" : "carne de cerdo",
+        "name" : "Carne de cerdo",
         "quantity": 50,
         "unit":"g"
       },
       {
-        "name" : "verduras",
+        "name" : "Verduras",
         "quantity": 100,
         "unit":"g"
       },
@@ -188,7 +188,7 @@ import { Burguer, Huevo, Pizza, Ramen, Sandwich  } from '../images'
         "unit":"g"
       },
       {
-        "name" : "aderezo especial",
+        "name" : "Aderezo especial",
         "quantity": 20,
         "unit":"g"
       }
@@ -210,17 +210,17 @@ import { Burguer, Huevo, Pizza, Ramen, Sandwich  } from '../images'
       "Unit": "eggs"
       },
       {
-        "name" : "jamon",
+        "name" : "Jamon",
         "quantity": 100,
         "unit": "g"
       },
       {
-        "name" : "pimienta",
+        "name" : "Pimienta",
         "quantity": 0.1,
         "unit":"g"
       },
       {
-        "name" : "sal",
+        "name" : "Sal",
         "quantity": 0.1,
         "unit":"g"
       }

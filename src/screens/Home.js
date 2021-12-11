@@ -3,7 +3,7 @@ import {Layout, Recent, SearchBar, Trending} from '../components';
 import {trendingList} from '../library/constants/trendingList';
 import {Item} from '../components/Item/index'
 
-export const Home = () => {
+export const Home = (props) => {
 
   //const [recent, setRecent] = useState([])
   const [trending, setTrending] = useState(trendingList)
@@ -32,8 +32,8 @@ const handleSearch=(text)=>{
     <Layout>
       <>
         <SearchBar handleSearch={handleSearch} />
-        <Trending list={trendingList} />
-        <Recent />
+        <Trending props={props} list={trendingList} />
+        <Recent props={props} list={trendingList}/>
       </>
     </Layout>
   );
