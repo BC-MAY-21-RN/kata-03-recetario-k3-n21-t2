@@ -94,7 +94,7 @@ Al ser reutilizables `List Item` y `Horizontal List`pueden servir tanto para tre
 
 ![Components](img/componentes.png)
 
-## Entregable
+## Entregable Final
 - Código fuente en Github (en la rama master)
 - Incluir en el repositorio la puntuación obtenida (badge) en CodeClimate
 - [Los commits deben se significativos](https://medium.com/better-programming/you-need-meaningful-commit-messages-d869e44e98d4)
